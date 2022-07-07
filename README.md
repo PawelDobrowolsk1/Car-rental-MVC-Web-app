@@ -6,8 +6,10 @@ As a rent car app you can rent cars and returns them. Also you can see your curr
 
 Instalation:
 
-	1. In file name "CarRental_Database" you can find files "CreatingByUsingFiles" that contains two file that can be copied to the database.
+	1. In file name "CarRental_Database" you can find files "CreatingByUsingFiles" that 
+	contains two file that can be copied to the database.
 
-	2. In a main project you need to change server name to your own in appsettings.json. You can find it by going to database properties.
+	2. In a main project you need to change server name to your 
+	own in appsettings.json. You can find it by going to database properties.
 
 HELP If you need help: pdobrowolski001@gmail.com
