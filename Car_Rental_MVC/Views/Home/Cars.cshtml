@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Car_Rental_MVC.Models.CarModel>
+
+@{
+    ViewData["Title"] = "Cars";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Cars</h1>
+<div>
+    <a asp-action="Index">Back to Home</a>
+</div>
+<table class="table mt-3">
+    <thead>
+       
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Make)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Engine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Horsepower)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seats)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doors)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transmisson)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Available)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Make)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Engine)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Horsepower)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Seats)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Doors)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Transmisson)
+                </td>
+                <td>
+                    @if (item.Available)
+                    {
+                        @Html.DisplayName("Yes")
+                    }
+                    else
+                    {
+                        @Html.DisplayName("No")
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { carId=item.CarId }) 
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (item.Available)
+                        {
+                            @Html.ActionLink("| Rent", "RentCar", new { email = User.Identity.Name, carId = item.CarId });
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
