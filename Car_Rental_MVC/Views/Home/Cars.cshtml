@@ -3,15 +3,25 @@
 @{
     ViewData["Title"] = "Cars";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.ReturnUrl = "/Home/Cars";
 }
 
-<h1>Cars</h1>
-<div>
-    <a asp-action="Index">Back to Home</a>
+<h1 class="text-center">Cars</h1>
+<div class="row">
+    <div class="col-md-6">
+        <a class="btn btn-secondary" asp-action="Index">Back to Home</a>
+    </div>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <div class="col-md-6 text-lg-end">
+            <a class="btn btn-success" asp-controller="Authentication" asp-action="Login" asp-route-returnUrl="@Context.Request.Path">Rent a car</a>
+        </div>
+    }
+
 </div>
 <table class="table mt-3">
     <thead>
-       
+
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Category)
@@ -82,12 +92,14 @@
                     }
                 </td>
                 <td>
-                    @Html.ActionLink("Details", "Details", new { carId=item.CarId }) 
+                    @Html.ActionLink("Details", "Details", new {carId=item.CarId, returnUrl="/Home/Cars"}, new {@class="btn btn-info"})
                     @if (User.Identity.IsAuthenticated)
                     {
                         if (item.Available)
                         {
-                            @Html.ActionLink("| Rent", "RentCar", new { email = User.Identity.Name, carId = item.CarId });
+                            @Html.ActionLink("Rent", "RentCar", new { email = User.Identity.Name, carId = item.CarId },
+                                                                new{@class="btn btn-success"})
+                            ;
                         }
                     }
                 </td>

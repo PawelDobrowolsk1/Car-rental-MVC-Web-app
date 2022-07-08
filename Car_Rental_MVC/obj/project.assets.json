@@ -9599,11 +9599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\IT\\.Kurs_C#\\.Programs\\#.My_Programs\\CarRental\\CarRental_ASP.NET MVC\\Car_Rental_MVC\\Car_Rental_MVC\\Car_Rental_MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\IT\\.Kurs_C#\\.Programs\\#.My_Programs\\CarRental\\CarRental_ASP.NET MVC\\Git\\Car_Rental_MVC\\Car_Rental_MVC.csproj",
       "projectName": "Car_Rental_MVC",
-      "projectPath": "C:\\Users\\Paweł\\Desktop\\IT\\.Kurs_C#\\.Programs\\#.My_Programs\\CarRental\\CarRental_ASP.NET MVC\\Car_Rental_MVC\\Car_Rental_MVC\\Car_Rental_MVC.csproj",
+      "projectPath": "C:\\Users\\Paweł\\Desktop\\IT\\.Kurs_C#\\.Programs\\#.My_Programs\\CarRental\\CarRental_ASP.NET MVC\\Git\\Car_Rental_MVC\\Car_Rental_MVC.csproj",
       "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paweł\\Desktop\\IT\\.Kurs_C#\\.Programs\\#.My_Programs\\CarRental\\CarRental_ASP.NET MVC\\Car_Rental_MVC\\Car_Rental_MVC\\obj\\",
+      "outputPath": "C:\\Users\\Paweł\\Desktop\\IT\\.Kurs_C#\\.Programs\\#.My_Programs\\CarRental\\CarRental_ASP.NET MVC\\Git\\Car_Rental_MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",

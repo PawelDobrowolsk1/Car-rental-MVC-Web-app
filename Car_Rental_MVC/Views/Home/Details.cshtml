@@ -93,3 +93,6 @@
         </dd>
     </dl>
 </div>
+<div>
+    @Html.ActionLink("Back", "BackToPreviousPage",new {returnUrl =TempData["ReturnUrl"]}, new{@class="btn btn-secondary"})
+</div>

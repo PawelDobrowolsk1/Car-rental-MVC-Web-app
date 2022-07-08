@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HsUAbNfnUPo+FuRYcNcpvDr99VfRfRKsu80d5oT/Tk1cfTYdgGOE/X77+kJE6mPMQkSzvCk9MXN1HPolXUfnbQ==",
+  "dgSpecHash": "zu+7uqMXZCb9fFrMxZTCtv27piALPyHXqX5w1cuEoSY/k4iV21C3R4eyiwmFXdIeTaFYl/aUGabMlx3NO8wPYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Desktop\\IT\\.Kurs_C#\\.Programs\\#.My_Programs\\CarRental\\CarRental_ASP.NET MVC\\Car_Rental_MVC\\Car_Rental_MVC\\Car_Rental_MVC.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\Desktop\\IT\\.Kurs_C#\\.Programs\\#.My_Programs\\CarRental\\CarRental_ASP.NET MVC\\Git\\Car_Rental_MVC\\Car_Rental_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

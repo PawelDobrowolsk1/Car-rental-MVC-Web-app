@@ -66,8 +66,9 @@
                         @Html.DisplayFor(modelItem => item.Transmisson)
                     </td>
                     <td>
-                        @Html.ActionLink("Details", "Details", new { carId=item.CarId }) |
-                        @Html.ActionLink("Give Back", "GiveBackCar", new { email = User.Identity.Name, carId=item.CarId })
+                        @Html.ActionLink("Details", "Details", new { carId=item.CarId, returnUrl="/Home/RentedCars" }, new{@class="btn btn-info"})
+                        @Html.ActionLink("Give Back", "GiveBackCar", new { email = User.Identity.Name, carId=item.CarId }, 
+                                                                     new {@class="btn btn-warning"})
                     </td>
                 </tr>
             }
