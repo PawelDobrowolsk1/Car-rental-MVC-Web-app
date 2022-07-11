@@ -101,6 +101,11 @@
                                                                 new{@class="btn btn-success"})
                             ;
                         }
+                        else
+                        {
+                            @Html.ActionLink("Rent", "RentCar", new { email = User.Identity.Name, carId = item.CarId },
+                                                                new{@class="btn btn-success disabled"})
+                        }
                     }
                 </td>
             </tr>

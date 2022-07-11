@@ -57,7 +57,7 @@ namespace Car_Rental_MVC.Controllers
             {
                 return Redirect(nameof(Cars));
             }
-
+            TempData["success"] = "Car successfully rented ";
             return Redirect("/");
         }
 
@@ -78,7 +78,7 @@ namespace Car_Rental_MVC.Controllers
             {
                 return Redirect(nameof(RentedCars));
             }
-
+            TempData["success"] = "Car successfully returned";
             return Redirect(nameof(RentedCars));
         }
 
